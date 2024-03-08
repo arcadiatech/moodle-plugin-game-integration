@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "23d2b97e-ec65-4e49-9ca3-8a4e31970f68",
+		"name": "moodle",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24213080"
+	},
+	"item": [
+		{
+			"name": "get profile",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/moodle/webservice/rest/server.php?wstoken=cb537ee57138f698e1106678b965edcc&wsfunction=core_user_get_course_user_profiles&moodlewsrestformat=json&userlist[0][userid]=2&userlist[0][courseid]=2",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moodle",
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "cb537ee57138f698e1106678b965edcc"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_user_get_course_user_profiles"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "userlist[0][userid]",
+							"value": "2"
+						},
+						{
+							"key": "userlist[0][courseid]",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save score",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/moodle/webservice/rest/server.php?wstoken=cb537ee57138f698e1106678b965edcc&wsfunction=mod_url_save_score&moodlewsrestformat=json&userid=3&score=2",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moodle",
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "cb537ee57138f698e1106678b965edcc"
+						},
+						{
+							"key": "wsfunction",
+							"value": "mod_url_save_score"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "userid",
+							"value": "3"
+						},
+						{
+							"key": "score",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get max score",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/moodle/webservice/rest/server.php?wstoken=cb537ee57138f698e1106678b965edcc&wsfunction=mod_url_get_user_max_score&moodlewsrestformat=json&userid=3",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moodle",
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "cb537ee57138f698e1106678b965edcc"
+						},
+						{
+							"key": "wsfunction",
+							"value": "mod_url_get_user_max_score"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "userid",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
