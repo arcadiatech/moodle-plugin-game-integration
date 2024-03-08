@@ -1,4 +1,4 @@
-# Moodle Native URL Plugin
+# Moodle Native URL Plugin 🚀
 
 This Moodle plugin was designed to providing native URL integration for external content in Moodle.
 
@@ -6,8 +6,9 @@ However, this modified version extends its capabilities to establish a secure co
 
 ## Changes Made
 
+- Modified Moodle view to show the maximum score of the user.
 - Added JWT (JSON Web Token) support to secure the URL integration.
-- Create a custom table in the database to store user scores.
+- Created a custom table in the database to store user scores.
 - Implemented web services to retrieve the maximum score and save scores within the plugin.
 
 ## Why Create a Full Custom Plugin?
